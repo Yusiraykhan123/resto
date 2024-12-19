@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9+ndv47%ub&^a4y91mflepyc3je96tit@@6szr356rqbw-98db
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yoloverse.pythonanywhere.com']
+ALLOWED_HOSTS = ['yoloverse.pythonanywhere.com','amrizadi.my.id','127.0.0.1','localhost']
 
 # Application definition
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # local apps
     'menus.apps.MenusConfig',
     'profiles.apps.ProfilesConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'server.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://yoloverse.pythonanywhere.com']
+CSRF_TRUSTED_ORIGINS = ['https://yoloverse.pythonanywhere.com','https://amrizadi.my.id']
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
