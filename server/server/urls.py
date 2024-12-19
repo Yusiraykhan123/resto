@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/menus/', include('menus.urls')),
     path('api/', include('profiles.urls')),
+    path('api/contact/', include('contact.urls')),  # Include the contact app URLs
     path('swagger-ui/', TemplateView.as_view(
         template_name='swagger-ui.html',
         extra_context={'schema_url':'openapi-schema'}

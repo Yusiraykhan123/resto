@@ -1,0 +1,34 @@
+API yang tersedia
+1. Menu (GET)
+https://yoloverse.pythonanywhere.com/api/menus/
+2. profile (GET)
+https://yoloverse.pythonanywhere.com/api/profile/
+3. jam buka (GET)
+https://yoloverse.pythonanywhere.com/api/opening-hour/
+4. FAQ (GET)
+https://yoloverse.pythonanywhere.com/api/faq/ 
+5. contact us (POST)
+https://yoloverse.pythonanywhere.com/api/contact-us/
+
+schema
+1. openapi
+https://yoloverse.pythonanywhere.com/openapi/
+2. swagger-ui
+https://yoloverse.pythonanywhere.com/swagger-ui/
+
+admin
+https://yoloverse.pythonanywhere.com/admin/
+user: admin
+password: !ADqswe3pNa!8ES8
+
+# Contact us example & detail
+{
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone_number": "1234567890",
+    "text": "I would like more information about your services."
+}
+name = models.CharField(max_length=255)
+email = models.EmailField()
+phone_number = models.CharField(max_length=15, null=True, blank=True)
+text = models.TextField()
